@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;  /* Centrado horizontal */
+  align-items: flex-start;  /* Alineado arriba */
+  min-height: 100vh;
+  padding-top: 40px; /* Espacio desde el top */
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+}
+
+form {
+  background: linear-gradient(to bottom, #fff, #ccc);
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #aaa;
+  padding: 20px;
+  width: 100%;
+}
+
+h1 {
+  border-bottom: 1px solid #ccc;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+form p {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 28px;
+  vertical-align: middle;
+}
+
+input[type=text],
+input[type=password],
+select {
+  width: calc(100% - 130px);
+  padding: 5px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, #fff 20%, #eee);
+  box-shadow: 0 0 3px #aaa;
+  vertical-align: middle;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+select:focus {
+  border-color: #093c75;
+  box-shadow: 0 0 3px #0459b7;
+  outline: none;
+}
+
+.actions {
+  text-align: center;
+  margin-top: 10px;
+}
+
+a.submit,
+input[type=submit] {
+  background: linear-gradient(to bottom, #08adff, #0459b7);
+  border: 1px solid #093c75;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  box-shadow: 0 1px 0 #fff;
+  text-shadow: 0 1px 1px #333;
+  cursor: pointer;
+  display: inline-block;
+}
+
+a.submit:hover,
+input[type=submit]:hover {
+  background: linear-gradient(to bottom, #0bcdff, #067cd3);
+}
+
+a {
+  color: #0459b7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#options {
+  display: none;
+  margin-top: 20px;
+}
+
+#options:target {
+  display: block;
+}
+
+#options p {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+#finish {
+  background: rgba(65, 166, 42, 0.2);
+  border: 2px solid #41a62a;
+  border-radius: 3px;
+  display: none;
+  padding: 5px 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#finish:target {
+  display: block;
+}

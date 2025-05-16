@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Inscripción</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <div class="container">
+    <form id="start" action="/">
+      <h1>Formulario de Inscripción</h1>
+
+      <p>
+        <label for="name">Nombre</label>
+        <input id="name" type="text" />
+      </p>
+      <p>
+        <label for="password">Clave</label>
+        <input id="password" type="password" />
+      </p>
+
+      <div class="actions">
+        <a href="#options">Ver más opciones</a> |
+        <a class="submit" href="#finish">Enviar</a> o
+        <a href="#start">Cancelar</a>
+      </div>
+    </form>
+
+    <div id="options">
+      <p>
+        <label for="zipcode">Código Postal</label>
+        <input id="zipcode" type="text" />
+      </p>
+      <p>
+        <label for="town">Ciudad</label>
+        <input id="town" type="text" />
+      </p>
+      <p>
+        <label for="country">País</label>
+        <select id="country">
+          <option>Francia</option>
+          <option>Alemania</option>
+          <option>Inglaterra</option>
+          <option>Portugal</option>
+          <option>Italia</option>
+          <option>Países Bajos</option>
+          <option>Rusia</option>
+          <option>Suecia</option>
+        </select>
+      </p>
+      <p>
+        <a href="#start">Ocultar las opciones</a>
+      </p>
+    </div>
+
+    <div id="finish">
+      <p>¡Inscripción finalizada!</p>
+    </div>
+  </div>
+</body>
+</html>
